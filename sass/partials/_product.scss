@@ -1,0 +1,29 @@
+.product {
+  margin: 0 auto;
+  padding: 0 auto;
+  justify-content: space-between;
+  max-width: 90%;
+  margin-top: 3em;
+  &__item {
+    background: $main;
+    border-radius: 15px;
+    height: 264px;
+    margin: 0.5em;
+  }
+  &__item--special {
+    border: solid 3px $active;
+    background: $white;
+  }
+  &__item--active {
+    background: $active;
+  }
+}
+@media (max-width: 576px) {
+  .product {
+    margin-top: 0;
+    &__item {
+      min-width: 84.5%;
+      margin: 0.5em auto;
+    }
+  }
+}

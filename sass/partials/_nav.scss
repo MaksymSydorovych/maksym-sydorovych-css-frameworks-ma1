@@ -1,0 +1,44 @@
+.navbar {
+  display: flex;
+  background: $main;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  &-brand {
+    font-family: $font-primary;
+    margin-left: 1em;
+  }
+  &__nav {
+    display: flex;
+    margin: 1em 1em;
+    &--item {
+      list-style-type: none;
+    }
+    &--link {
+      font-family: $font-links;
+      font-size: 18px;
+      color: $darkgrey;
+      text-decoration: none;
+    }
+    &--active {
+      color: $active;
+    }
+  }
+
+  button {
+    margin: 1em 1em;
+  }
+}
+@media (max-width: 988px) {
+  .navbar {
+    &__nav {
+      flex-direction: column;
+      padding-left: 0.5em;
+    }
+    &-brand {
+      margin-left: 0.7em;
+    }
+  }
+}
